@@ -95,16 +95,16 @@ class _buttonsigns
       if (signchoice[computerchoice] ==
           playerchoice) {
         result =
-            " computer wins person loses";
+            " you lose!😭";
         scoreC++;
       } else if (signchoice[playerchoice] ==
           computerchoice) {
         result =
-            "person wins computer loses";
+            "you win!🤭";
         scoreP++;
       } else {
         result =
-            "person wins computer loses";
+            "tie😬";
       }
     });
   }
@@ -158,7 +158,7 @@ class _buttonsigns
                   10,
             ),
             Text(
-              "puter: ",
+              "computer: ",
               style: TextStyle(
                 fontSize:
                     16,
@@ -185,11 +185,11 @@ class _buttonsigns
           height: 5,
         ),
         Row(
-          mainAxisAlignment:
-              MainAxisAlignment
-                  .spaceEvenly,
-
           children: [
+            SizedBox(
+              height:
+                  5,
+            ),
             signbutton(
               ontap: () {
                 changesignP(
@@ -199,6 +199,10 @@ class _buttonsigns
               image:
                   'images/rock.png',
             ),
+            SizedBox(
+              width:
+                  10,
+            ),
             signbutton(
               ontap: () {
                 changesignP(
@@ -207,6 +211,10 @@ class _buttonsigns
               },
               image:
                   'images/paper.png',
+            ),
+            SizedBox(
+              width:
+                  10,
             ),
             signbutton(
               ontap: () {
@@ -219,7 +227,10 @@ class _buttonsigns
             ),
           ],
         ),
-
+        SizedBox(
+          height:
+              10,
+        ),
         Text(
           result,
         ),
@@ -227,18 +238,28 @@ class _buttonsigns
           height: 5,
         ),
         Text(
-          "human score: $scoreP "
+          "your score: $scoreP "
           "\t"
-          "uter score: $scoreC",
+          "comuter score: $scoreC",
         ),
         SizedBox(
           height: 5,
         ),
-        signbutton(
-          ontap:
+        IconButton(
+          onPressed:
               restP,
-          image:
-              'images/rest.png',
+          style: IconButton.styleFrom(
+            foregroundColor: Color.fromARGB(
+              255,
+              68,
+              134,
+              189,
+            ),
+          ),
+          icon: Icon(
+            Icons
+                .restart_alt,
+          ),
         ),
       ],
     );

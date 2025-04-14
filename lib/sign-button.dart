@@ -21,6 +21,21 @@ class signbutton
     return IconButton(
       onPressed:
           ontap,
+      style: IconButton.styleFrom(
+        backgroundColor:
+            Color.fromARGB(
+              255,
+              77,
+              126,
+              199,
+            ),
+        padding: EdgeInsets.symmetric(
+          horizontal:
+              10,
+          vertical:
+              5,
+        ),
+      ),
       icon:
           Image.asset(
             image,
@@ -29,7 +44,6 @@ class signbutton
             width:
                 50,
           ),
-      iconSize: 1,
     );
   }
 }

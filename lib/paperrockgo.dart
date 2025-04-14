@@ -1,8 +1,5 @@
-import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:paperrockpleasespareme/buttons-sign.dart';
-import 'package:paperrockpleasespareme/sign-button.dart';
-import 'package:paperrockpleasespareme/sing-lists-maps.dart';
 
 void main(
   List<String> args,
@@ -68,7 +65,7 @@ class _rockpapergo
               ),
               SizedBox(
                 height:
-                    20,
+                    10,
               ),
               Row(
                 mainAxisAlignment:
