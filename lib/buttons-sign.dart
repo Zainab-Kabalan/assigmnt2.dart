@@ -134,9 +134,22 @@ class _buttonsigns
               width:
                   6,
             ),
-            Text(
-              playersign,
-            ),
+            playersign ==
+                    '❓'
+                ? Text(
+                  playersign,
+                  style: TextStyle(
+                    fontSize:
+                        20,
+                  ),
+                )
+                : Image.asset(
+                  playersign,
+                  width:
+                      25,
+                  height:
+                      25,
+                ),
             SizedBox(
               width:
                   6,
@@ -163,10 +176,22 @@ class _buttonsigns
               width:
                   6,
             ),
-            Text(
-              computersign,
-            ),
-
+            computersign ==
+                    '❓'
+                ? Text(
+                  computersign,
+                  style: TextStyle(
+                    fontSize:
+                        20,
+                  ),
+                )
+                : Image.asset(
+                  computersign,
+                  width:
+                      25,
+                  height:
+                      25,
+                ),
             SizedBox(
               width:
                   6,
@@ -174,13 +199,14 @@ class _buttonsigns
           ],
         ),
         SizedBox(
-          height: 5,
+          height:
+              10,
         ),
         Row(
           children: [
             SizedBox(
               height:
-                  5,
+                  10,
             ),
             signbutton(
               ontap: () {
@@ -227,12 +253,13 @@ class _buttonsigns
           result,
         ),
         SizedBox(
-          height: 5,
+          height:
+              10,
         ),
         Text(
           "your score: $scoreP "
           "\t"
-          "comuter score: $scoreC",
+          "computer score: $scoreC",
         ),
         SizedBox(
           height: 5,
