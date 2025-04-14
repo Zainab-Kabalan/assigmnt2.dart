@@ -29,9 +29,9 @@ class _buttonsigns
   void restP() {
     setState(() {
       computersign =
-          'images/start.png';
+          '❓';
       playersign =
-          'images/start.png';
+          '❓';
       result = ' ';
       scoreC = 0;
       scoreP = 0;
@@ -42,11 +42,10 @@ class _buttonsigns
   int scoreC = 0;
 
   String
-  playersign =
-      'images/start.png';
+  playersign = '❓';
   String
   computersign =
-      'images/start.png';
+      "❓";
   String
   playerchoice = "";
 
@@ -135,12 +134,8 @@ class _buttonsigns
               width:
                   6,
             ),
-            Image.asset(
+            Text(
               playersign,
-              width:
-                  30,
-              height:
-                  20,
             ),
             SizedBox(
               width:
@@ -168,13 +163,10 @@ class _buttonsigns
               width:
                   6,
             ),
-            Image.asset(
+            Text(
               computersign,
-              width:
-                  30,
-              height:
-                  20,
             ),
+
             SizedBox(
               width:
                   6,
